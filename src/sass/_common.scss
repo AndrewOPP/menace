@@ -16,6 +16,10 @@ body {
     // overflow-y: hidden;
 }
 
+* {
+    user-select: none;
+    -webkit-user-drag: none;
+}
 
 a {
     color: black;
@@ -52,7 +56,13 @@ a.footer-list-words:hover {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 34px;
     line-height: 1.17;
+    margin-left: 320px;
+}
+
+@media only screen and (min-width: 1700px) {
+.main-title {
     margin-left: 620px;
+  }
 }
 
 
@@ -73,7 +83,13 @@ a.footer-list-words:hover {
     justify-content: center;
     list-style: none;
     gap: 50px;
-    margin-left: 200px;
+    margin-left: 100px;
+}
+
+@media only screen and (min-width: 1500px) {
+    .header-nav-list {
+        margin-left: 200px;
+    }
 }
 
 .nav-list-item {
@@ -145,10 +161,17 @@ a.footer-list-words:hover {
     font-weight: 5;
     max-width: 1900px;
     color: #dbd3a3;
-    font-size: 44px;
+    font-size: 38px;
     padding-left: 100px;
     padding-right: 120px;
 }
+
+@media only screen and (min-width: 1700px) {
+    .second-block-text {
+        font-size: 44px;
+    }
+}
+
 .logo-hero {
     height: 300px;
     width: 300px;
@@ -156,11 +179,18 @@ a.footer-list-words:hover {
 
 .img-div {
     position: absolute;
-    top: 580px;
-    right: 300px;
+    top: 600px;
+    right: 200px;
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+@media only screen and (min-width: 1500px) {
+    .img-div {
+        top: 580px;
+         right: 300px;
+    }
 }
 
 .img-div-text {
@@ -185,6 +215,24 @@ a.footer-list-words:hover {
 }
 
 
+.gallery-ul-img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-letters {
+    padding: 0;
+    margin: 0;
+    font-family: 'KyivTypeMainText';
+    font-weight: 1;
+    max-width: 1900px;
+    color: #dbd3a3;
+    font-size: 64px;
+}
+
+
 .gallery-ul {
     list-style: none;
     display: flex;
@@ -200,6 +248,15 @@ a.footer-list-words:hover {
 
 }
 
+@media only screen and (min-width: 1550px) {
+.gallery-img-zero  {
+    width: 600px;
+    height: 550px
+  }
+}
+
+
+
 #gallery-img-0:hover {
     scale: 105%;
     // border: 3px solid #dbd7a3;
@@ -212,8 +269,6 @@ scale: 105%;
 .gallery-img {
   
     border-radius: 12px;
-    
-    height: 100%;
 
 }
 
@@ -221,10 +276,17 @@ scale: 105%;
 #gallery-img-0{
 z-index: 999;
 position: absolute;
-top: 400px;
-left: 550px;
+top: 500px;
+right: 680px;
 height: 400px;
 transition: all 300ms;
+}
+
+@media only screen and (min-width: 1550px) {
+#gallery-img-0 {
+    top: 400px;
+        right: 750px;
+  }
 }
 
 
@@ -241,7 +303,7 @@ transition: all 300ms;
 #gallery-img-3 {
     position: absolute;
         top: 71px;
-    left: 870px;
+    right: 750px;
 }
 
 
