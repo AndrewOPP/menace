@@ -270,7 +270,7 @@ a.footer-list-words:hover {
 .gallery-ul-sec-li-div {
   width: 25vw;
   height: 300px;
-  background-color: rgb(224, 199, 166);
+
   border-radius: 15px;
   transition: all 300ms;
 }
@@ -475,4 +475,17 @@ a.footer-list-words:hover {
 }
 
 .catalog-item {
+}
+
+.gallery-ul-sec-li-div-img {
+  width: 25vw;
+  height: 300px;
+
+  border-radius: 15px;
+}
+
+@media only screen and (min-width: 1500px) {
+  .gallery-ul-sec-li-div-img {
+    height: 375px;
+  }
 }
